@@ -1,0 +1,35 @@
+def fact(n):    # factorial
+    f=1
+    for i in range(1,n+1):
+        f=f*i
+    return f
+x=int(input("enter a number"))
+result=fact(x)
+print(result)
+
+
+
+
+import sys                # Recursion
+sys.setrecursionlimit(2000)
+print(sys.getrecursionlimit())
+i=0
+def greet():
+    global i
+    i=i+1
+    print('Hello')
+    greet()
+
+greet()
+
+
+
+
+
+
+def fact(n):             # factorial using recursion
+    if n==0:
+        return 1
+    return n*fact(n-1)
+result=fact(5)
+print(result)
